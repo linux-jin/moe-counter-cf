@@ -1,0 +1,15 @@
+name = "moe-counter-cf"
+type = "javascript"
+account_id = "5598ed56758d7b038c57895f1ff7ecf5"  # 此处将 <CF_ACCOUNT_ID> 替换为账户 ID
+zone_id = "aab2fedd9ab99bb89984a0ce10247815"  # 此处将 <CF_ZONE_ID> 替换为区域 ID
+workers_dev = false
+route = "count.mistyhill.ml/*"  # 此处将 <YOUR_DOMAIN> 替换为你的域名
+compatibility_date = "2022-03-12"
+kv_namespaces = [
+  { binding = "KV", id = "6b0e4097726e4d55ba52e87e03b36e48"},  # 此处将 <CF_KV_ID> 替换为命名空间 ID
+]
+
+[build]
+command = "npm run build"
+[build.upload]
+format = "service-worker"
