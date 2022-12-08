@@ -1,7 +1,7 @@
 {
   "defaults": {
-    "theme": "gelbooru",
-    "length": 7,
+    "theme": "rule34",
+    "length": "auto",
     "render": "auto"
   },
   "api": {
@@ -12,8 +12,9 @@
     "enabled": true
   },
   "ids": {
-    "dsrkafuu:demo": "Demo for GitHub & preview site.",
-    "dsrkafuu:home": "Personal blog & GitHub page.",
-    "dsrkafuu:tools": "For DSRTOOLs counter."
+    "github": "个人github",
+    "pmlist": "pm云盘",
+    "list": "个人云盘",
+    "blog": "个人博客"
   }
 }
